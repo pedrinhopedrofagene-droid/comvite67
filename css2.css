@@ -1,0 +1,56 @@
+
+
+@keyframes subirSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de pulso contínuo */
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+/* Animação de brilho / piscar */
+@keyframes brilho {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* 3. Estilos Gerais */
+body {
+    background-color: rgb(219, 164, 173);
+}
+
+
+
+@font-face {
+    font-family: "surper waffles";
+    src: url(Super\ Waffles.ttf);
+}
+body{
+    background-color: pink;
+}
+#quadrado{
+    height: 222px;
+background-color: rgb(206, 138, 149);
+border-radius: 22px;
+}
+#p1{
+    font-family: "surper waffles";
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    font-size: 50px;
+    animation: subirSuave 1s ease-out forwards;
+}
